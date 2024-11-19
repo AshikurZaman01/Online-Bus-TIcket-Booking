@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        hero: ['Sour Gummy', 'sans-serif'],
+        hero1: ["Oswald", 'sans-serif']
+      }
+    },
   },
   plugins: [
     require('daisyui'),
