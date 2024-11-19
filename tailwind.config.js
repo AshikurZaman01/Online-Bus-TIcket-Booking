@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         hero: ['Sour Gummy', 'sans-serif'],
-        hero1: ["Oswald", 'sans-serif']
+        hero1: ["Oswald", 'sans-serif'],
+        primary: ["Roboto", "sans-serif"]
       }
     },
   },

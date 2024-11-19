@@ -16,7 +16,7 @@ const Hero = () => {
     return (
         <div>
             <motion.div
-                className="w-full flex h-screen bg-cover bg-no-repeat relative bg-gray-200 rounded-md"
+                className="w-full flex h-screen bg-cover bg-no-repeat relative  rounded-md"
                 style={{ backgroundImage: `url(${hero})` }}
                 variants={variants}
                 initial="hidden"
@@ -25,8 +25,7 @@ const Hero = () => {
 
                 <LeftTextAni />
 
-
-                <RightTextAni />    
+                <RightTextAni />
 
             </motion.div>
         </div>
