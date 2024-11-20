@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Links from "./Links";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -34,9 +35,9 @@ const Navbar = () => {
     >
       <div className="max-w-screen-xl mx-auto flex justify-between items-center gap-4 px-5 py-3">
         <div>
-          <h1 className="text-3xl font-bold capitalize text-red-500 font-hero">
+          <Link to={"/"} className="text-3xl font-bold capitalize text-red-500 font-hero">
             Tickets.com
-          </h1>
+          </Link>
         </div>
 
         <div className="flex justify-between items-center gap-20">

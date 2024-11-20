@@ -1,6 +1,7 @@
 import Card from "./Card";
 
 const Services = () => {
+
     const services = [
         { id: 1, icon: "RiSecurePaymentLine", title: "Secure Payment", desc: "We provide secure payment gateway for our customers to make payments easily and safely." },
         { id: 2, icon: "RiCustomerService2Line", title: "Customer Support", desc: "We provide 24/7 customer support to our customers to resolve their queries and issues." },
