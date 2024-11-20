@@ -2,6 +2,7 @@ import hero from '../../../../assets/images/herobg.png';
 import { motion } from 'framer-motion';
 import LeftTextAni from './LeftTextAni';
 import RightTextAni from './RightTextAni';
+import SearchBar from './SearchBar';
 
 const Hero = () => {
     const variants = {
@@ -26,6 +27,8 @@ const Hero = () => {
                 <LeftTextAni />
 
                 <RightTextAni />
+
+                <SearchBar />
 
             </motion.div>
         </div>

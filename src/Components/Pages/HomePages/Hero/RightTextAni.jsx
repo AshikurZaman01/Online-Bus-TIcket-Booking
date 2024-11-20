@@ -1,10 +1,7 @@
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 const RightTextAni = () => {
-
     const text = "Find Your Best Bus Tickets";
-
-    const letters = text.split("");
 
     return (
         <motion.div
@@ -14,29 +11,12 @@ const RightTextAni = () => {
             className="absolute inset-0 flex justify-center items-start top-16 px-6 sm:px-12"
         >
             <div className="text-center">
-                <motion.h2 className="text-5xl mt-4 font-hero font-semibold">
-                    {letters.map((letter, index) => (
-                        <motion.span
-                            key={index}
-                            initial={{ color: 'rgb(255, 255, 255)' }}
-                            animate={{
-                                color: ['rgb(255, 255, 255)', 'rgb(255, 165, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)', 'rgb(255, 0, 255)'],
-                            }}
-                            transition={{
-                                duration: 4,
-                                repeat: Infinity,
-                                repeatType: "loop",
-                                delay: index * 0.1,
-                                times: [0, 0.25, 0.5, 0.75, 1],
-                            }}
-                        >
-                            {letter}
-                        </motion.span>
-                    ))}
-                </motion.h2>
+                <h2 className="text-5xl mt-4 font-hero font-semibold">
+                    {text}
+                </h2>
             </div>
         </motion.div>
-    )
-}
+    );
+};
 
-export default RightTextAni
+export default RightTextAni;
