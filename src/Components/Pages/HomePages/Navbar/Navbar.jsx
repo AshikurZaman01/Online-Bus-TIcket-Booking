@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center gap-4">
 
             <div>
-                <h1 className="text-3xl font-bold capitalize text-red-500">Tickets.com</h1>
+                <h1 className="text-3xl font-bold capitalize text-red-500 font-hero">Tickets.com</h1>
             </div>
 
             <div className="flex  justify-between items-center gap-20">
