@@ -1,5 +1,6 @@
 import Hero from "../HomePages/Hero/Hero"
 import Services from "../Services/Services"
+import TopSearch from "../TopSearch/TopSearch"
 
 const Home = () => {
     return (
@@ -9,6 +10,8 @@ const Home = () => {
             <Hero />
 
             <Services />
+
+            <TopSearch />
 
         </div>
     )

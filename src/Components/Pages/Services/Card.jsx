@@ -10,7 +10,7 @@ const Card = ({ service }) => {
         RiTruckLine: RiTruckLine,
     };
 
-    const Icon = icons[icon]; // Get the corresponding icon component dynamically
+    const Icon = icons[icon];
 
     return (
         <div className="mt-20">
