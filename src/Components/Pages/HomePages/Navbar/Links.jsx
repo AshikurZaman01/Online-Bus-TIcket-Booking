@@ -6,7 +6,7 @@ const Links = ({ route }) => {
             <NavLink
                 to={route.path}
                 className={({ isActive }) =>
-                    isActive ? "text-blue-500 font-bold" : "text-gray-500"
+                    isActive ? "text-gray-500 font-bold" : "text-gray-400"
                 }
             >
                 {route.name}

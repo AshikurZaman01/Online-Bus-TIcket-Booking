@@ -26,8 +26,13 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <button className="btn btn-md bg-red-500 text-white ">Sign In</button>
+                    <button
+                        className="btn bg-red-500 text-white w-[100px] rounded-full hover:bg-red-600 transition-all"
+                    >
+                        Sign In
+                    </button>
                 </div>
+
             </div>
 
         </div>
