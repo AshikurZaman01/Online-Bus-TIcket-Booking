@@ -12,6 +12,10 @@ export default {
         primary: ["Roboto", "sans-serif"]
       }
     },
+    colors: {
+      'primary1': '#f50a01',
+
+    }
   },
   plugins: [
     require('daisyui'),

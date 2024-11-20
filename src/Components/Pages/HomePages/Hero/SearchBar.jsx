@@ -42,14 +42,14 @@ const SearchBar = () => {
                         <div className="w-1/2 h-14 border border-neutral-300 bg-white/70 text-base text-neutral-700 font-medium px-5 flex  items-center gap-x-1 rounded-lg">
 
                             <input type="text" name="" id="" placeholder="To...."
-                                className="flex-1 h-full border-none bg-transparent focus:outline-none" />
+                                className="flex-1 h-full border-none bg-transparent focus:outline-none px-2" />
                             <div className="w-5 h-5 ">
                                 <FaMapMarkerAlt className="text-neutral-500" />
                             </div>
 
                         </div>
 
-                        <div className="absolute w-11 h-6 top-1/2 left-1/2  -translate-y-1/2 -translate-x-1/2 bg-[#f50a01]  rounded-lg flex items-center justify-center">
+                        <div className="absolute w-14 h-6 top-1/2 left-1/2  -translate-y-1/2 -translate-x-1/2 bg-[#f50a01]  rounded-xl flex items-center justify-center">
                             <TbArrowsExchange className="w-6 h-6 text-white"></TbArrowsExchange>
                         </div>
 
