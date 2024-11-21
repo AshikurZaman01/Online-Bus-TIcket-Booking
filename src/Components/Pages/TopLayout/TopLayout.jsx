@@ -20,7 +20,7 @@ const TopLayout = ({ bgImg, title, className }) => {
                     initial={{ opacity: 0, y: -800 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.85, ease: "easeInOut" }}
-                    className="text-5xl text-neutral-300 font-bold capitalize "
+                    className="text-5xl text-neutral-300 font-bold capitalize font-hero"
                 >
                     {title}
                 </motion.h1>
