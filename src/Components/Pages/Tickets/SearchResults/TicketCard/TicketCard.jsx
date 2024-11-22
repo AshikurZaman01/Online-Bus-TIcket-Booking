@@ -3,8 +3,9 @@ import { GiCharging, GiWaterBottle } from "react-icons/gi";
 import { IoTv } from "react-icons/io5";
 import { MdOutlineChair } from "react-icons/md";
 import { TbAirConditioning } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
-const TicketCard = ({ busName, routeFrom, routeTo, arrivalTime, price, availableSeats, timeDuration, departureTime }) => {
+const TicketCard = ({ busName, routeFrom, routeTo, arrivalTime, price, availableSeats, timeDuration, departureTime, id }) => {
     return (
         <div className="w-full rounded-lg p-6 shadow-lg bg-white hover:shadow-2xl transition-all border border-gray-200">
             <div className="space-y-6">
@@ -69,9 +70,11 @@ const TicketCard = ({ busName, routeFrom, routeTo, arrivalTime, price, available
             {/* Price and Button */}
             <div className="mt-6 flex items-center justify-between">
                 <h1 className="text-lg font-bold text-gray-800">{price}</h1>
-                <button className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                    Reserve Seat
-                </button>
+                <Link to={`/details/${id}`}>
+                    <button className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+                        Reserve Seat
+                    </button>
+                </Link>
             </div>
         </div>
     );

@@ -1,9 +1,9 @@
 import TicketCard from "./TicketCard/TicketCard";
 
 const SearchResults = () => {
-    // ডামি ডাটা
     const tickets = [
         {
+            id: 1,
             busName: "Shyamoli Paribahan",
             routeFrom: "Dhaka",
             routeTo: "Chittagong",
@@ -14,6 +14,7 @@ const SearchResults = () => {
             timeDuration: "6 Hours",
         },
         {
+            id: 2,
             busName: "Green Line",
             routeFrom: "Dhaka",
             routeTo: "Sylhet",
@@ -25,6 +26,7 @@ const SearchResults = () => {
         },
 
         {
+            id: 3,
             busName: "Hanif Enterprise",
             routeFrom: "Dhaka",
             routeTo: "Khulna",
@@ -36,6 +38,7 @@ const SearchResults = () => {
         },
 
         {
+            id: 4,
             busName: "Shohag Paribahan",
             routeFrom: "Dhaka",
             routeTo: "Rajshahi",
@@ -46,6 +49,7 @@ const SearchResults = () => {
             timeDuration: "6 Hours",
         },
         {
+            id: 5,
             busName: "Shohag Paribahan",
             routeFrom: "Dhaka",
             routeTo: "Rajshahi",
@@ -56,6 +60,7 @@ const SearchResults = () => {
             timeDuration: "10 Hours",
         },
         {
+            id: 6,
             busName: "Shohag Paribahan",
             routeFrom: "Dhaka",
             routeTo: "Rajshahi",
@@ -66,6 +71,7 @@ const SearchResults = () => {
             timeDuration: "5 Hours",
         },
         {
+            id: 7,
             busName: "Shohag Paribahan",
             routeFrom: "Dhaka",
             routeTo: "Rajshahi",
@@ -81,7 +87,7 @@ const SearchResults = () => {
         <div className="w-full col-span-3 space-y-10 mt-24 pt-11">
             {tickets.map((ticket, index) => (
                 <div key={index} className="space-y-6">
-                    <TicketCard {...ticket} />
+                    <TicketCard {...ticket} id={ticket.id} />
                 </div>
             ))}
         </div>
